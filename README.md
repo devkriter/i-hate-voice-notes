@@ -1,4 +1,4 @@
-# Voice Note Transcriber
+# I hate voice notes
 
 A tiny Windows tray app for people who'd rather read WhatsApp voice notes than listen to them. Whisper runs locally on your GPU, so nothing leaves your PC.
 
@@ -6,7 +6,7 @@ A tiny Windows tray app for people who'd rather read WhatsApp voice notes than l
 
 ## Use
 
-- **WhatsApp Desktop:** voice note menu → **Open with** → **Voice Note Transcriber**
+- **WhatsApp Desktop:** voice note menu → **Open with** → **I hate voice notes**
 - **Or:** Share → Copy, then **Ctrl+V** in the popup
 - **Or:** drag files onto the popup (pin it first)
 

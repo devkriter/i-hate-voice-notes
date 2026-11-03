@@ -27,7 +27,7 @@ public static class OpenWith
             using (var icon = Registry.CurrentUser.CreateSubKey(Classes + ProgId + @"\DefaultIcon"))
                 icon.SetValue("", $"\"{exe}\",0");
             using (var open = Registry.CurrentUser.CreateSubKey(Classes + ProgId + @"\shell\open"))
-                open.SetValue("FriendlyAppName", "Voice Note Transcriber");
+                open.SetValue("FriendlyAppName", "I hate voice notes");
             using (var command = Registry.CurrentUser.CreateSubKey(Classes + ProgId + @"\shell\open\command"))
                 command.SetValue("", $"\"{exe}\" \"%1\"");
             foreach (var ext in Extensions)

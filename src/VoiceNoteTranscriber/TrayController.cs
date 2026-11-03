@@ -57,7 +57,7 @@ public sealed class TrayController : IDisposable
         _icon = new Forms.NotifyIcon
         {
             ContextMenuStrip = menu,
-            Text = "Voice Note Transcriber",
+            Text = "I hate voice notes",
             Icon = TrayIconRenderer.DrawIcon("idle", IconSize),
             Visible = true,
         };
@@ -238,9 +238,9 @@ public sealed class TrayController : IDisposable
         string state = busy > 0 ? "working" : _unseen ? "ready" : "idle";
         _icon.Text = busy switch
         {
-            0 => _unseen ? "Voice Note Transcriber\nA transcript is ready" : "Voice Note Transcriber",
-            1 => "Voice Note Transcriber\nTranscribing a voice note…",
-            _ => $"Voice Note Transcriber\nTranscribing {busy} voice notes…",
+            0 => _unseen ? "I hate voice notes\nA transcript is ready" : "I hate voice notes",
+            1 => "I hate voice notes\nTranscribing a voice note…",
+            _ => $"I hate voice notes\nTranscribing {busy} voice notes…",
         };
         _popup.ShowState(state, busy);
         if (state == _drawnState)

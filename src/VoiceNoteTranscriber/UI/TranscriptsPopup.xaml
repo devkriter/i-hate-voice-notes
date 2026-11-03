@@ -1,7 +1,7 @@
 <Window x:Class="VoiceNoteTranscriber.UI.TranscriptsPopup"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Voice Note Transcriber"
+        Title="I hate voice notes"
         ThemeMode="Dark"
         WindowStyle="SingleBorderWindow"
         ResizeMode="CanResize"
@@ -107,7 +107,7 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Ellipse x:Name="StateDot" Width="8" Height="8" Fill="#C8C8C8" Margin="0,1,8,0" />
-                    <TextBlock Grid.Column="1" Text="Voice notes" Foreground="#D8D8D8" FontSize="12" />
+                    <TextBlock Grid.Column="1" Text="I hate voice notes" Foreground="#D8D8D8" FontSize="12" />
                     <TextBlock x:Name="TitleDetail" Grid.Column="2" Foreground="#9A9A9A" FontSize="12"
                                Margin="6,0,0,0" TextTrimming="CharacterEllipsis" />
                 </Grid>
@@ -201,7 +201,7 @@
                     <TextBlock Foreground="#9A9A9A" FontSize="12" TextWrapping="Wrap" TextAlignment="Center"
                                LineHeight="18" MaxWidth="280">
                         In WhatsApp, open a voice note's menu → <Run Foreground="#D8D8D8">Open with</Run> →
-                        <Run Foreground="#D8D8D8">Voice Note Transcriber</Run>.
+                        <Run Foreground="#D8D8D8">I hate voice notes</Run>.
                         <LineBreak />Or copy one (Share → Copy) and press <Run Foreground="#D8D8D8">Ctrl+V</Run> here.
                         <LineBreak />Or drag files here, or
                         <Hyperlink Foreground="#60CDFF" Click="OnOpenClick">open them</Hyperlink>.
