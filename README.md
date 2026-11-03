@@ -4,6 +4,10 @@ A tiny Windows tray app for people who'd rather read WhatsApp voice notes than l
 
 <img src="docs/screenshot.png" width="400" alt="The popup with two transcribed voice notes">
 
+## Install
+
+Download the zip from [Releases](https://github.com/devkriter/i-hate-voice-notes/releases), unzip it anywhere and run `VoiceNoteTranscriber.exe`. Nothing needs installing. It's unsigned, so if SmartScreen warns you, click **More info → Run anyway**. Each time it starts, the app adds itself to "Open with" for your user only. Run it with `--unregister` to remove that.
+
 ## Use
 
 - **WhatsApp Desktop:** voice note menu → **Open with** → **I hate voice notes**
@@ -14,6 +18,10 @@ The first note downloads the model (~570 MB, once). After that, an 11-second not
 
 ## Build
 
-Needs the [.NET 10 SDK](https://dotnet.microsoft.com/download). Run `build.bat`, then start `publish\VoiceNoteTranscriber\VoiceNoteTranscriber.exe`. On every start it adds itself to "Open with" (current user only), and `--unregister` removes it.
+Needs the [.NET 10 SDK](https://dotnet.microsoft.com/download). Run `build.bat`, which makes `publish\VoiceNoteTranscriber\` and a release zip.
 
 Built with [Whisper.net](https://github.com/sandrohanea/whisper.net) (`large-v3-turbo`, Vulkan with CPU fallback) and libopus. The UI follows [klipper-tray-icon](https://github.com/devkriter/klipper-tray-icon).
+
+## License
+
+[GPL-3.0](LICENSE)
